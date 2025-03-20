@@ -1,0 +1,70 @@
+/* Import this CSS in styles.css: @import url('animations.css'); */
+
+/* Scroll-based fade-in effect */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+}
+
+/* Slide Up Effect */
+.slide-up {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1.2s ease-in-out, transform 1.2s ease-in-out;
+}
+
+/* Slide Right Effect */
+.slide-right {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 1.2s ease-in-out, transform 1.2s ease-in-out;
+}
+
+/* Slide Left Effect */
+.slide-left {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 1.2s ease-in-out, transform 1.2s ease-in-out;
+}
+
+/* Apply the animations when element comes into view */
+.show {
+    opacity: 1;
+    transform: translateY(0) translateX(0);
+}
+
+/* Button Hover Animation */
+.btn {
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background: #ff9900;
+}
+
+header {
+    transition: background 0.5s ease-in-out;
+}
+
+.section {
+    background-attachment: fixed;
+    transition: background 0.8s ease-in-out;
+}
+
+footer {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    width: 100%;
+}
+
+footer.show {
+    opacity: 1;
+    transform: translateY(0);
+}
